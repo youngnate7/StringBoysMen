@@ -44,7 +44,13 @@ public class Sentence {
      *
      */
     public void replaceNthTime(String str, int n, String repl) {
-        /*  part b - you must call findNthTime here */
+        String b = currSent.substring(0, findNthTime(str, n));
+        int d = b.length()-1 + str.length();
+        String c = currSent.substring(d);
+        if(findNthTime(str, n) != -1){
+            String a = b + repl + d;
+            
+        }
     }
 
     /** Returns the index of the last occurrence of str in the current sentence:
